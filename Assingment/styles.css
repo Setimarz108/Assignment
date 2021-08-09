@@ -1,0 +1,614 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+
+html,body {
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+}
+ 
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    min-height: 100vh;
+    max-width: 100%;
+    padding: auto;
+    background: url("images/desk.jpg") ;
+    background-position: center ;
+    background-size: cover;
+    overflow: hidden;
+    filter: opacity(0.9);
+  
+    
+          
+}
+
+.container::before{
+    content: "";
+    background: rgb(3, 3, 3);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+    z-index: -1;
+
+}
+
+@media screen and (max-width:500px){
+
+          .container .hero{
+            background-image: url("images/bckgrd500.png") no-repeat center center fixed ;
+            overflow: hidden;
+            max-width: 100vh;
+            background-size: repeat;
+                   }
+
+        .main-content .hero h1{
+            
+            display: block  ;
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 35px !important;
+            line-height: 30px;
+            margin: 40% 17% -10% 2% !important ;
+            padding-top: 30%;
+            width: 100%;
+            color: white;  
+            text-align: center;
+            
+        }
+
+        html{
+            font-size: 40%;
+        }
+
+        .hero{
+            display: flex;
+            align-content: center;
+            justify-content: center;
+             width: 66%;
+           
+             
+        }
+
+        .hero .hero-text{
+            display: flex;
+            align-content: center;
+            margin-left: 5%;
+            margin-right: 5%;
+            padding:auto;
+            width: 100%;
+            font-size: 18px;
+            font-weight: normal;
+        }
+
+        .buttons .learn{
+            width: 40%;
+            margin-left:12%;
+            margin-right: 20%;
+            font-size: 20px !important;
+        }
+
+        .buttons .join-us{
+            width: 40%;
+            margin-left:12%;
+            margin-right: 20%;
+            font-size: 20px !important;
+            display: ;
+          
+        }
+         
+
+        .services{
+            margin-left:5%;
+            margin-right:10%;
+        }
+
+        .cards-div .service-cards{
+            width: 100%;
+            font-size: 20%;
+        }
+        .services .heading-services{
+            font-size: 4.5rem;
+            margin-top: 5%;
+        }
+        .services h2 {
+             font-size: 30px;
+        }
+
+        .services p{
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .services .btn-card{
+
+            width: 70%;
+            margin: 0px;
+            font-size: 20px;
+        }
+
+        
+        .footer{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            }
+       
+        footer i{
+            
+            
+            width: 80px;
+            height: 80px;
+            padding-left: 70px;
+            padding-right: 30px;
+            font-size: 20px;
+            }
+
+        span { 
+         
+        position: relative;        
+        font-size: 16px !important;
+        margin: 0% 1.5% 0% 1.5% !important;
+        
+        
+       }
+
+       .fa-instagram-square{
+          margin-left:0%;
+          padding:0px;
+    }
+    
+    .fa-linkedin{
+        color: #2867B2;
+        padding:0px 25px 0px 25px;
+    
+    }
+    
+    .fa-twitter{
+        color:#1DA1F2;
+        padding:0px;
+    }
+
+}
+
+
+
+@media  (max-width:800px)
+{
+        
+    .container{
+      
+        display: flex;
+        flex-direction: column;
+        height: 1000px ;
+        max-width: 100%;
+        background-image: url("images/mobile.png");
+        background-size: cover;
+        background-position:center;
+        min-height:300px;
+        overflow: hidden;
+                    }
+       
+    ul li{
+        display: none ;        
+    }
+
+    .navbar .logo{
+        display: inline-block;
+        margin-left: 0px; 
+        margin-right: 0px;
+        padding-top: 40px;
+        font-size: 20px;
+    }
+
+    .container .navbar{
+          padding-bottom: 20px;
+          padding-top: 30px;
+
+    }    
+    
+    
+    .main-content .hero .main{
+        
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 55px ;
+        display: block;
+        line-height: 60px;
+        margin: 30% 20% 10% 4%;
+        width: 100%;
+        color: white;  
+        text-align: center;
+        
+    }
+    
+    .hero p{
+        display: block;
+        justify-content: center;
+        font-size: 30px;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: lighter;
+        line-height: 30px;
+                color: white;
+        width: 100%;
+        height: 300px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-left: 2%;
+        padding-right: 2%;
+              
+    }
+
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        padding: auto 25px auto 25px;
+        
+    }
+
+    .buttons button{
+        
+        width: 264px;
+        height: 74px;
+        border: solid 5px white;
+        padding: 20px 6px 20px 6px;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+
+    .join-us{
+         
+        margin-top: 20px;
+
+    }
+
+    .cards-div{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+    }
+
+    .services{
+        
+        flex-direction: row;
+        font-size: 30%;
+        margin-top: 0px !important;
+        margin: 10%;
+    }
+
+  
+   
+    .cards-div.service-cards p{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: normal;
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: 1.5%;
+        text-align: center;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+}
+
+
+@media  (min-width:700px) {
+  
+    .main-content.hero .hero-text{   
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-size: 8vw;
+            padding: auto;
+                                      
+          }
+
+    .container{
+        height: 1100px;
+    }    
+}
+
+@media  (min-width:1000px) {
+  
+    .container{
+        height: 1000px;
+    }    
+}
+
+
+/*navbar*/
+
+.navbar{
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    display: flex;
+    position:absolute;
+    justify-content: space-between;
+    align-items: center;
+    padding: 67px 40px 66px 45px;
+    background: rgba(0, 0, 0, 0.60);
+    height: 40px;
+    width: 100%;
+    
+}
+
+.nav-links {
+    display: flex;    
+    align-content: space-around;
+    list-style-type: none;
+  }
+
+.logo{
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+    margin: 40px auto 45px 67px;
+
+    
+}
+ul{
+    margin-top: 0;
+}
+
+.nav-item a{
+    display: inline-block;
+   padding: 0px 15px;
+   margin-top: 0 !important;
+   margin-right: 60px;
+   text-decoration: none;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 35px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 30px;
+   letter-spacing: 0em;
+   text-align: center;
+   color: white;
+
+ }
+
+
+ /* HERO Section*/
+
+ 
+
+ .hero{
+     height: 800px;
+     margin-bottom: 0px;
+     display: flex;
+     flex-direction: column;
+     align-content: center;
+     text-align: center;
+     }
+  
+.main-content .hero h1{
+    
+    display: inline;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 80px;
+    line-height: 98px;
+    margin: 30% 33% 20px 30%;
+    width: 600px;    
+    color: white;
+    
+}
+
+.hero-text{
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+   padding: 20px 25% 20px 25%;
+    margin-bottom: 40px;
+    color: white;
+    position: relative;
+    
+}
+
+
+.buttons{
+    width: 600px;
+    height: 80px;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    align-content: center;
+    text-align: center;
+    
+}
+
+.learn{
+    height: 80px;
+    width: 450px;
+    margin-right: 50px;
+    border: solid white;
+    background-color: rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: white;
+
+        
+}
+
+.join-us{
+
+    height: 80px;
+    width: 450px;
+    font-weight: bold;
+    font-size: 1.4rem; 
+    background-color: white;   
+    margin-right: 20px;
+   
+}
+
+ .join-us:hover{
+    cursor: pointer;
+}
+.learn:hover{
+    cursor: pointer;
+}
+
+
+/* services */
+
+.services{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.cards-div{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 400px;
+}
+
+
+.heading-services{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 73px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 150px;
+
+}
+
+.service-cards{
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    border: solid;
+    border-color: black;
+    width: 450px;
+    height: 650px;
+    margin-top: 80px;
+}
+
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold; 
+    font-size: 50px; 
+    padding: 30px 30px 15px 30px; 
+    line-height: 48px; 
+    letter-spacing: 3%;
+
+}
+
+.service-cards p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 40px;
+    letter-spacing: 4%;
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.btn-card{
+    width: 300px;
+    height: 74px;
+    margin-top: 50px;    
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: white;
+    color: black;
+    border: solid 5px black;
+}
+
+.btn-card:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: none;
+
+}
+
+/* footer */
+
+.footer{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: rgba(8, 8, 8, 0.85);    
+    height: 135px;
+
+}
+
+footer i{
+    
+    width: 40px;
+    height: 40px;
+    padding-left: 70px;
+    padding-right: 30px;
+    font-size: 30px;
+    }
+
+.fa-instagram-square{
+    color: #C13584;    
+}
+
+.fa-linkedin{
+    color: #2867B2;
+
+}
+
+.fa-twitter{
+    color:#1DA1F2;
+}
+.copy{
+    
+
+    font-family: 'Montserrat';
+    color: white;
+    text-decoration: none;
+    margin: 55px 63px 50px auto;
+    font-size: 25px;
+    line-height: 20px;
+    
+
+}
+
+
+
